@@ -503,9 +503,10 @@ div::selection {
     height: 180px;
     border-left: 50px solid var(--main-color);
     border-bottom: 50px solid var(--main-color);
-    top: -58px;
-    right: -130px;
+    top: -87px;
+    right: -55px;
     z-index: -1;
+    
 }
 
 .apout .apout-content .text {
