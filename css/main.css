@@ -131,9 +131,18 @@ div::selection {
     position: relative;
 }
 
-.header .links:hover ul {
+/* editing */
+/* .header .links:hover ul {
     display: initial;
+} */
+.header .links .message {
+  position: absolute;
+  font-size: 10px;
+  color: #dddddd54;
+  top: 8px;
+  right: 8px;
 }
+/* editing */
 
 .header .links:hover .icon :nth-child(2) {
     width: 100%;
