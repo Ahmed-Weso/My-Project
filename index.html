@@ -249,5 +249,30 @@
     </div>
     <!-- end footer -->
 </body>
+    <script>
+    // Access to menue
+    let menue = document.querySelector(".links");
+    let links = document.querySelector(".links ul");
+    // cteate span message for hide a menue
+    let message = document.createElement("span");
+    message.textContent = "Double Click to hide";
+    message.className = "message";
+
+    console.log(message);
+    // event mouse enter
+    menue.onmouseenter = function () {
+      // event to show
+      menue.onclick = function () {
+        links.style.display = "initial";
+        //show message
+        links.appendChild(message);
+        // event to hidden menue and message
+        menue.onclick = function () {
+          links.style.display = "none";
+          message.remove();
+        };
+      };
+    };
+  </script>
 
 </html>
